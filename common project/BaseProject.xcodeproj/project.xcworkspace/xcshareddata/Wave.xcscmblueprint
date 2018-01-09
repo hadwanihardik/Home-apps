@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1F5863E56A7C1C41C380B810F02673321C5B51D3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1189FB272C4E4DDFEBD98FC8B302A846466F3616" : 9223372036854775807,
+    "1F5863E56A7C1C41C380B810F02673321C5B51D3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C47986C9-8478-4E38-913A-E38706CAFB5C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1189FB272C4E4DDFEBD98FC8B302A846466F3616" : "Cleaner\/",
+    "1F5863E56A7C1C41C380B810F02673321C5B51D3" : "WaveApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Wave",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Wave\/Wave.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/harshsolanki\/cleaner.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1189FB272C4E4DDFEBD98FC8B302A846466F3616"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/harshsolanki\/waveapp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1F5863E56A7C1C41C380B810F02673321C5B51D3"
+    }
+  ]
+}

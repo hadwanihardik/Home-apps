@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingPageController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIi-2Q-OKw">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="xee-Eg-yzY">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="cYn-ny-ojD"/>
+                        <constraint firstAttribute="height" constant="90" id="v2P-85-7gK"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWv-cO-JNN" userLabel="Btn Login">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="315" id="Opt-2w-IN3"/>
+                        <constraint firstAttribute="height" constant="50" id="jeF-wF-s1b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="Login"/>
+                    <connections>
+                        <action selector="handlerSignIn:" destination="-1" eventType="touchUpInside" id="7I3-rI-7BM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqh-YV-8te" userLabel="Btn SignUp">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="315" id="Cnd-dZ-Cjz"/>
+                        <constraint firstAttribute="height" constant="50" id="xVR-hR-E6v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="Signup"/>
+                    <connections>
+                        <action selector="handlerSignUp:" destination="-1" eventType="touchUpInside" id="H2h-uR-uI6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KWv-cO-JNN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2cC-zg-7pD"/>
+                <constraint firstItem="xee-Eg-yzY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="3Js-rB-RAl"/>
+                <constraint firstAttribute="bottom" secondItem="DIi-2Q-OKw" secondAttribute="bottom" id="90x-Op-f8L"/>
+                <constraint firstItem="Tqh-YV-8te" firstAttribute="top" secondItem="KWv-cO-JNN" secondAttribute="bottom" constant="15" id="EnN-Pd-MCt"/>
+                <constraint firstItem="DIi-2Q-OKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IeK-4q-kh1"/>
+                <constraint firstItem="xee-Eg-yzY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ki9-ku-hRN"/>
+                <constraint firstItem="Tqh-YV-8te" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XQY-bq-mjU"/>
+                <constraint firstItem="DIi-2Q-OKw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kkI-2B-uaJ"/>
+                <constraint firstAttribute="bottom" secondItem="Tqh-YV-8te" secondAttribute="bottom" constant="40" id="vnc-LA-wvu"/>
+                <constraint firstAttribute="trailing" secondItem="DIi-2Q-OKw" secondAttribute="trailing" id="xjz-Pq-Bgd"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Login" width="315" height="50"/>
+        <image name="Signup" width="315" height="50"/>
+        <image name="signin_icon" width="108" height="108"/>
+    </resources>
+</document>
