@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupListViewController">
+            <connections>
+                <outlet property="collectionViewGroups" destination="jmK-YB-PQu" id="4dh-Xx-pPe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRh-Ax-gQd" userLabel="Header">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerBg" translatesAutoresizingMaskIntoConstraints="NO" id="OHo-3n-jTc">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoHeader" translatesAutoresizingMaskIntoConstraints="NO" id="hud-0y-i7B">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="B1q-1z-ZRl"/>
+                        <constraint firstItem="hud-0y-i7B" firstAttribute="centerY" secondItem="bRh-Ax-gQd" secondAttribute="centerY" id="GzR-kR-BNY"/>
+                        <constraint firstItem="hud-0y-i7B" firstAttribute="centerX" secondItem="bRh-Ax-gQd" secondAttribute="centerX" id="Hcy-Nw-27p"/>
+                        <constraint firstAttribute="bottom" secondItem="OHo-3n-jTc" secondAttribute="bottom" id="WhN-Ds-08z"/>
+                        <constraint firstItem="OHo-3n-jTc" firstAttribute="top" secondItem="bRh-Ax-gQd" secondAttribute="top" id="cwV-ak-qUw"/>
+                        <constraint firstAttribute="trailing" secondItem="OHo-3n-jTc" secondAttribute="trailing" id="fTP-Be-HII"/>
+                        <constraint firstItem="OHo-3n-jTc" firstAttribute="leading" secondItem="bRh-Ax-gQd" secondAttribute="leading" id="gaQ-ei-df4"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jmK-YB-PQu">
+                    <color key="backgroundColor" red="0.77647058820000003" green="0.7843137255" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fyC-4s-ffq">
+                        <size key="itemSize" width="200" height="200"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cST-fU-w0Q"/>
+                        <outlet property="delegate" destination="-1" id="vyf-UR-aWN"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jmK-YB-PQu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="81R-7D-HPA"/>
+                <constraint firstAttribute="trailing" secondItem="bRh-Ax-gQd" secondAttribute="trailing" id="86d-uD-qKX"/>
+                <constraint firstItem="bRh-Ax-gQd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nt5-bk-0mY"/>
+                <constraint firstItem="jmK-YB-PQu" firstAttribute="top" secondItem="bRh-Ax-gQd" secondAttribute="bottom" id="k5e-b1-HsK"/>
+                <constraint firstAttribute="bottom" secondItem="jmK-YB-PQu" secondAttribute="bottom" constant="49" id="mvM-IM-FNb"/>
+                <constraint firstAttribute="trailing" secondItem="jmK-YB-PQu" secondAttribute="trailing" id="sRB-BO-gfK"/>
+                <constraint firstItem="bRh-Ax-gQd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tvq-m8-zS8"/>
+            </constraints>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="-14.5" y="-58.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="headerBg" width="375" height="64"/>
+        <image name="logoHeader" width="125" height="43"/>
+    </resources>
+</document>

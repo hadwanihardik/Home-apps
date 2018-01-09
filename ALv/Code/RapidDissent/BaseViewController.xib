@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseViewController">
+            <connections>
+                <outlet property="btnLeft" destination="xi5-rK-8Ye" id="iuC-cH-nPZ"/>
+                <outlet property="containerView" destination="psQ-iO-WkQ" id="Plg-jT-kll"/>
+                <outlet property="headerView" destination="JS3-DD-Bd4" id="wbQ-T2-sy1"/>
+                <outlet property="imvHeader" destination="E1f-sM-MBJ" id="8kW-o2-eKh"/>
+                <outlet property="titleHeader" destination="XEq-zL-dvO" id="RvO-WL-vYt"/>
+                <outlet property="view" destination="vfE-de-2Hi" id="byM-8W-zZz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vfE-de-2Hi">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JS3-DD-Bd4" userLabel="Header View">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnV-dG-VYj" userLabel="View Top Bar">
+                            <subviews>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEq-zL-dvO">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="18"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E1f-sM-MBJ"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi5-rK-8Ye" userLabel="left">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="44" id="Ni6-27-Scs"/>
+                                        <constraint firstAttribute="height" constant="44" id="Qxz-Br-qjo"/>
+                                    </constraints>
+                                    <state key="normal" image="Settings_navbar_icon">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="xi5-rK-8Ye" firstAttribute="leading" secondItem="tnV-dG-VYj" secondAttribute="leading" constant="1" id="7y0-0C-6ss"/>
+                                <constraint firstAttribute="bottom" secondItem="XEq-zL-dvO" secondAttribute="bottom" id="C8J-F3-OJz"/>
+                                <constraint firstItem="xi5-rK-8Ye" firstAttribute="top" secondItem="tnV-dG-VYj" secondAttribute="top" constant="20" id="Pmx-oq-mic"/>
+                                <constraint firstAttribute="bottom" secondItem="E1f-sM-MBJ" secondAttribute="bottom" id="SEX-gT-h5F"/>
+                                <constraint firstItem="E1f-sM-MBJ" firstAttribute="leading" secondItem="tnV-dG-VYj" secondAttribute="leading" id="V2d-22-Ed7"/>
+                                <constraint firstItem="XEq-zL-dvO" firstAttribute="top" secondItem="tnV-dG-VYj" secondAttribute="top" constant="20" id="bwb-hH-iuM"/>
+                                <constraint firstAttribute="trailing" secondItem="XEq-zL-dvO" secondAttribute="trailing" id="dQb-j5-eHd"/>
+                                <constraint firstAttribute="trailing" secondItem="E1f-sM-MBJ" secondAttribute="trailing" id="hf3-fh-AGH"/>
+                                <constraint firstItem="E1f-sM-MBJ" firstAttribute="top" secondItem="tnV-dG-VYj" secondAttribute="top" id="hiA-C6-HBA"/>
+                                <constraint firstItem="XEq-zL-dvO" firstAttribute="leading" secondItem="tnV-dG-VYj" secondAttribute="leading" id="jkh-cg-do4"/>
+                                <constraint firstAttribute="height" constant="64" id="knQ-wv-m2X"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="tnV-dG-VYj" firstAttribute="top" secondItem="JS3-DD-Bd4" secondAttribute="top" id="07z-ng-hzg"/>
+                        <constraint firstAttribute="height" constant="64" id="ENu-ai-L4e"/>
+                        <constraint firstItem="tnV-dG-VYj" firstAttribute="leading" secondItem="JS3-DD-Bd4" secondAttribute="leading" id="Yao-4W-V7q"/>
+                        <constraint firstAttribute="trailing" secondItem="tnV-dG-VYj" secondAttribute="trailing" id="hDX-Ze-oyu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psQ-iO-WkQ" userLabel="Content View">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JS3-DD-Bd4" firstAttribute="leading" secondItem="vfE-de-2Hi" secondAttribute="leading" id="7B3-VC-Ua1"/>
+                <constraint firstItem="JS3-DD-Bd4" firstAttribute="top" secondItem="vfE-de-2Hi" secondAttribute="top" id="CTD-MF-iVS"/>
+                <constraint firstAttribute="bottom" secondItem="psQ-iO-WkQ" secondAttribute="bottom" constant="49" id="LLE-CZ-5FC"/>
+                <constraint firstAttribute="trailing" secondItem="psQ-iO-WkQ" secondAttribute="trailing" id="MLN-Gg-nx2"/>
+                <constraint firstAttribute="trailing" secondItem="JS3-DD-Bd4" secondAttribute="trailing" id="QB3-t5-6Yk"/>
+                <constraint firstItem="psQ-iO-WkQ" firstAttribute="leading" secondItem="vfE-de-2Hi" secondAttribute="leading" id="TLR-Ld-fGH"/>
+                <constraint firstItem="psQ-iO-WkQ" firstAttribute="top" secondItem="JS3-DD-Bd4" secondAttribute="bottom" id="f9l-oT-2FE"/>
+            </constraints>
+            <point key="canvasLocation" x="-55" y="-177"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Settings_navbar_icon" width="24" height="23"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5w-QO-aHL" userLabel="Comment">
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqB-tl-LB0" userLabel="time">
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="T5w-QO-aHL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Bic-RN-fXJ"/>
+                    <constraint firstItem="TqB-tl-LB0" firstAttribute="top" secondItem="T5w-QO-aHL" secondAttribute="bottom" id="C7U-tY-rhu"/>
+                    <constraint firstAttribute="bottom" secondItem="TqB-tl-LB0" secondAttribute="bottom" constant="2" id="JTU-so-JmB"/>
+                    <constraint firstItem="TqB-tl-LB0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="W7T-pT-jRA"/>
+                    <constraint firstAttribute="bottom" secondItem="T5w-QO-aHL" secondAttribute="bottom" constant="20" id="WLJ-e2-Qxe"/>
+                    <constraint firstAttribute="trailing" secondItem="T5w-QO-aHL" secondAttribute="trailing" constant="5" id="Yll-cc-JMp"/>
+                    <constraint firstAttribute="trailing" secondItem="TqB-tl-LB0" secondAttribute="trailing" constant="5" id="ceM-nX-Inp"/>
+                    <constraint firstItem="T5w-QO-aHL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pzW-wO-4iW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblComment" destination="T5w-QO-aHL" id="xpm-jU-v2b"/>
+                <outlet property="lbldatetime" destination="TqB-tl-LB0" id="A9r-LL-2f2"/>
+            </connections>
+            <point key="canvasLocation" x="-451" y="-203"/>
+        </tableViewCell>
+    </objects>
+</document>
